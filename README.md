@@ -1,12 +1,12 @@
 This is a Python project for ChatGPT 3.5 API demos in different scenarios, includes the following 6 related demos:
 
-1. Image API demo
-2. News EE demo
-3. PDF Multiple Round Chat demo
-4. PDF One Round demo
-5. Test Case Automation demo
-6. Reference demo
-7. Token Calculator demo
+🎉 Image API demo  
+🎉 News EE demo  
+🎉 PDF Multiple Round Chat demo  
+🎉 PDF One Round demo  
+🎉 Test Case Automation demo  
+🎉 Reference demo  
+🎉 Token Calculator demo  
 
 
 ## Image API demo
