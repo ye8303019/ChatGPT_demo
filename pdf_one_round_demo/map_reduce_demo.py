@@ -1,8 +1,6 @@
 import openai
-import pandas as pd
 import PyPDF2
 import re
-from openai.embeddings_utils import distances_from_embeddings
 import token_calculator_demo.token_calculator as tc
 import openai_key
 
@@ -123,7 +121,8 @@ def map_prompt(chunk_content):
 def reduce_prompt(chunk_summarize_content):
     message = [{"role": "system", "content": "You are a copyeditor."},
                {"role": "user", "content": f"Combine the below summaries. The combined output must be "
-                                           f"less than {reduce_character_limit} characters long. You must keep the content "
+                                           f"less than {reduce_character_limit} characters long. "
+                                           f"You must keep the content "
                                            f"and context preserved."
                                            f"Input: {chunk_summarize_content} "
                                            f"Output:"

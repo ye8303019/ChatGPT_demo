@@ -268,7 +268,7 @@ loading_thread = threading.Thread(target=loading)
 loading_thread.start()
 
 # news_content_1, news_content_2
-file_contents = get_news_content('news_content_1', 1300)
+file_contents = get_news_content('news_content_6', 1300)
 results = [news_ee(x) for x in file_contents]
 
 count = 0
