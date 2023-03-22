@@ -38,6 +38,7 @@ openai_key.py
 
 # Distribution / packaging
 .Python
+.idea
 build/
 develop-eggs/
 dist/
