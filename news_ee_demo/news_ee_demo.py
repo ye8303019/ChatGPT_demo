@@ -260,23 +260,21 @@ def loading():
         loading_count += 1
 
 
-print("====================================================")
 print("=========  正在将内容进行拆分/组合/调用/抽取   ===========")
-print("====================================================")
 
 loading_thread = threading.Thread(target=loading)
 loading_thread.start()
 
 # news_content_1, news_content_2
-file_contents = get_news_content('news_content_6', 1300)
+file_contents = get_news_content('news_content_7', 1300)
 results = [news_ee(x) for x in file_contents]
 
 count = 0
-
+stop_thread = True
+loading_thread.join()
 print("")
-print("====================================================")
+print("")
 print("=================  Final Results   =================")
-print("====================================================")
 for answer in results:
     formatted_answer = format_answer(answer)
     for i, data in enumerate(formatted_answer):

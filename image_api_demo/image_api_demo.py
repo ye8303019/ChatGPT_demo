@@ -6,7 +6,7 @@ from io import BytesIO
 import re
 
 openai.api_key = openai_key.api_key
-question = "给我5只猫"
+question = "给我5个建筑物的图片"
 
 response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",

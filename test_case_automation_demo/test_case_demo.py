@@ -13,7 +13,7 @@ case_step = 5
 model = 'gpt-3.5-turbo'
 
 # Drug Search Upgrade.xmind, Synapse PLG 2.0.xmind,专利1.2.xmind,多靶点遗留.xmind,Dashboard 优化.xmind
-file_name = 'Drug Search Upgrade.xmind'
+file_name = 'Synapse PLG 2.0.xmind'
 
 
 def max_level(tree_dict, current_level=0, max_level_number=0):
