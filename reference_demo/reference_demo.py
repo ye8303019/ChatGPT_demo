@@ -1,6 +1,8 @@
 import openai
-import PyPDF2
+import utils.openai_utils as ou
 import re
+
+import main
 import token_calculator_demo.token_calculator as tc
 import openai_key
 
@@ -9,9 +11,10 @@ openai.api_key = openai_key.api_key
 # Author : Ye Zhongkai
 
 # reference_content_1
-model = 'gpt-3.5-turbo'
+model = main.OPENAI_MODEL
 table_summary_limit = 1500
 table_summary_token_limit = 300
+final_summary_token_limit = 2000
 
 
 def get_content(file_name):
@@ -72,15 +75,10 @@ def get_shot_summary(content):
                                                f"analysis. write in English and The output must be "
                                                f"less than {table_summary_limit} characters long"
                     }]
-        response = openai.ChatCompletion.create(
-            model=model,
-            max_tokens=table_summary_token_limit,
-            messages=message,
-            temperature=0.2
-        )
+        response = ou.chat_completion(message, model, table_summary_token_limit)
         print("===============================================================")
-        print("Summary: " + response["choices"][0]["message"]["content"].strip())
-    return response["choices"][0]["message"]["content"].strip()
+        print("Summary: " + response)
+    return response
 
 
 def read_with_reference(content):
@@ -109,13 +107,8 @@ def read_with_reference(content):
     #                                        f"insights, and do not tell others what's the role of you.Please write "
     #                                        f"in English."
     #             }]
-    response = openai.ChatCompletion.create(
-        model=model,
-        max_tokens=2000,
-        messages=message,
-        temperature=0.5
-    )
-    return response["choices"][0]["message"]["content"].strip()
+    response = ou.chat_completion(message, model, final_summary_token_limit, 0.5, 20)
+    return response
 
 
 summaries = [get_shot_summary(x) for x in get_tables(get_content("reference_content_1"))]

@@ -1,17 +1,14 @@
-import openai
 import token_calculator_demo.token_calculator as tc
-import openai_key
 import re
 import time
 import sys
 import threading
-
-openai.api_key = openai_key.api_key
+import main
+import utils.openai_utils as ou
 
 # Author : Ye Zhongkai
-
-max_token = 500
-model = 'gpt-3.5-turbo'
+max_token = 1000
+model = main.OPENAI_MODEL
 
 
 # Remove new lines from the text
@@ -201,7 +198,7 @@ def news_ee(news_content):
                                            f"3月9日，中国国家药监局药品审评中心（CDE）官网公示，阿斯利康（AstraZeneca）递交了1类新药AZD9592的临床试验"
                                            f"申请，并获得受理。根据阿斯利康公开资料，AZD9592是一款利用其内部专有的抗体偶联药物（ADC）技术研发的新产品"
                                            f"，以EGFR-cMET为靶点，正在海外开展1期临床研究"
-                                           f"Then the table of the arguments should be:"
+                                           f"then the table of the arguments should be:"
                                            f"[Event 1] \n"
                                            f"| Argument Role | Argument Content | \n"
                                            f"|:-----|:----------------| \n"
@@ -230,18 +227,15 @@ def news_ee(news_content):
                                            f"| Disease | 实体瘤 | \n"
                                            f"| Country/Location | 中国 | \n"
                                            f"| Date | 2023-03-09 | \n"
-                                           f"| Study Phase/Approved | 临床试验申请 | \n"
+                                           f"| Study Phase/Approved | 临床试验申请 | \n\n"
+                                           f"Notice: DO NOT MERGE THE DRUG OR DISEASE INTO ONE EVENT, SEPARATE THEM "
+                                           f"INTO MULTIPLE EVENTS ! \n\n "
                                            f"Now, please use this rule to extract the event and it's arguments from  \n"
                                            f"the content below: \n"
                                            f"{news_content}"
                 }]
-    response = openai.ChatCompletion.create(
-        model=model,
-        max_tokens=1000,
-        messages=message,
-        temperature=0.2
-    )
-    return response["choices"][0]["message"]["content"].strip()
+
+    return ou.chat_completion(message, model, max_token, 0.2, 50)
 
 
 stop_thread = False

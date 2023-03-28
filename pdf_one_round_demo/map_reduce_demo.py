@@ -3,6 +3,8 @@ import PyPDF2
 import re
 import token_calculator_demo.token_calculator as tc
 import openai_key
+import main
+import utils.openai_utils as ou
 
 openai.api_key = openai_key.api_key
 
@@ -13,7 +15,7 @@ file_name = 'Rethinking-Marketing(1).pdf'
 pdf_chunk_token_limit = 3200
 map_character_limit = 650
 reduce_character_limit = 3300
-model = 'gpt-3.5-turbo'
+model = main.OPENAI_MODEL
 
 
 # Remove new lines from the text
@@ -108,14 +110,9 @@ def map_prompt(chunk_content):
                                            f"Input: {chunk_content} "
                                            f"Output:"
                 }]
-    response = openai.ChatCompletion.create(
-        model=model,
-        max_tokens=map_character_limit,
-        messages=message,
-        temperature=0.2
-    )
-    print("Map:    " + response["choices"][0]["message"]["content"].strip())
-    return response["choices"][0]["message"]["content"].strip()
+    response = ou.chat_completion(message, model, map_character_limit, 0.2, 20)
+    print("Map:    " + response)
+    return response
 
 
 def reduce_prompt(chunk_summarize_content):
@@ -127,14 +124,9 @@ def reduce_prompt(chunk_summarize_content):
                                            f"Input: {chunk_summarize_content} "
                                            f"Output:"
                 }]
-    response = openai.ChatCompletion.create(
-        model=model,
-        max_tokens=reduce_character_limit,
-        messages=message,
-        temperature=0.2
-    )
-    print("Reduce:     " + response["choices"][0]["message"]["content"].strip())
-    return response["choices"][0]["message"]["content"].strip()
+    response = ou.chat_completion(message, model, reduce_character_limit, 0.2, 50)
+    print("Reduce:     " + response)
+    return response
 
 
 pdf_content = get_pdf_content(file_name)

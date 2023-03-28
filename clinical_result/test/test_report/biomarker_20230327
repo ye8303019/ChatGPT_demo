@@ -1,0 +1,28 @@
+                                                                   precision    recall  f1-score   support
+
+                                                            CCRCC       0.00      0.00      0.00         0
+                                                    CD20-POSITIVE       1.00      1.00      1.00         1
+                                                    CD22-POSITIVE       1.00      1.00      1.00         1
+                              EGFR MUTANT,PD-L1+,TP53 CO-MUTATION       0.00      0.00      0.00         0
+                                                     EGFR MUTATED       0.00      0.00      0.00         1
+                                EGFR MUTATIONS (EXON 18/19/20/21)       0.00      0.00      0.00         1
+                                                EGFR-MUTATED,HER2       0.00      0.00      0.00         0
+                                                            EGFRM       0.00      0.00      0.00         0
+                                                        HR+/HER2-       0.00      0.00      0.00         1
+                                                        HR+/HER2−       0.00      0.00      0.00         0
+   KRAS MUTATION STATUS,EPIDERMAL GROWTH FACTOR RECEPTOR-POSITIVE       0.00      0.00      0.00         0
+                                                   KRAS WILD-TYPE       0.00      0.00      0.00         1
+                                                             MRCC       0.00      0.00      0.00         0
+                                                       NON-GBRCAM       0.00      0.00      0.00         0
+                                     NON-GERMLINE BRCA1/2-MUTATED       0.00      0.00      0.00         1
+                                                             NONE       0.00      0.00      0.00         5
+PD-L1 COMBINED POSITIVE SCORE (CPS),TUMOR MUTATIONAL BURDEN (TMB)       0.00      0.00      0.00         0
+                           PD-L1+;TP53 CO-MUTATION;EGFR MUTATIONS       0.00      0.00      0.00         1
+                                                             PSMA       0.00      0.00      0.00         0
+                                 RAS MUTATIONS BEYOND KRAS EXON 2       1.00      1.00      1.00         1
+                                                 RAS/BRAF MUTATED       1.00      1.00      1.00         1
+                                                UROTHELIAL CANCER       0.00      0.00      0.00         0
+
+                                                         accuracy                           0.27        15
+                                                        macro avg       0.18      0.18      0.18        15
+                                                     weighted avg       0.27      0.27      0.27        15

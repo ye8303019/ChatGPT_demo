@@ -4,17 +4,18 @@ import tiktoken
 import PyPDF2
 from openai.embeddings_utils import distances_from_embeddings
 import openai_key
+import main
+import utils.openai_utils as ou
 
 openai.api_key = openai_key.api_key
-
 
 # Author : Ye Zhongkai
 
 max_token = 500
-model = 'gpt-3.5-turbo'
-
 # test.pdf, mv-v19-1074.pdf
 file_name = 'mv-v19-1074.pdf'
+
+model = main.OPENAI_MODEL
 
 # Load the tokenizer which is designed to work with the ada-002 model
 tokenizer = tiktoken.encoding_for_model(model)
@@ -140,17 +141,13 @@ def answer_question(
                                                        f"language of the question, the max length of the "
                                                        f"answer should in 3000 words"})
         # Create a completions using the question and context
-        response = openai.ChatCompletion.create(
-            model=models,
-            max_tokens=1800,
-            messages=message,
-            temperature=0.2
-        )
+
+        answer = ou.chat_completion(message, model, 1800, 0.2, 20)
+
         if debug:
-            print("response\n" + response)
+            print("answer\n" + answer)
             print("\n\n")
 
-        answer = response["choices"][0]["message"]["content"].strip()
         message.append({"role": "assistant", "content": answer})
         result_tuple = (message, answer)
         return result_tuple

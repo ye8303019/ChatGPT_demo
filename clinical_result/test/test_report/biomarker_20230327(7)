@@ -1,0 +1,26 @@
+                                                                       precision    recall  f1-score   support
+
+                                                             CCRCC1-4       0.00      0.00      0.00         0
+                                                        CD20-POSITIVE       1.00      1.00      1.00         1
+                                                        CD22-POSITIVE       1.00      1.00      1.00         1
+                                                         EGFR MUTATED       0.00      0.00      0.00         1
+EGFR MUTATED NON-SQUAMOUS NON-SMALL CELL LUNG CANCER (EGFRM NSQNSCLC)       0.00      0.00      0.00         0
+                                    EGFR MUTATIONS (EXON 18/19/20/21)       0.00      0.00      0.00         1
+                                                    EGFR-MUTATED,HER2       0.00      0.00      0.00         0
+                                   HR+,HER2-,VISCERAL METS,LIVER METS       0.00      0.00      0.00         0
+                                                            HR+/HER2-       0.00      0.00      0.00         1
+       HRD+VE* INCLUDING SBRCAM,HRD+VE EXCLUDING SBRCAM,SBRCAM,HRD-VE       0.00      0.00      0.00         0
+                                                       KRAS WILD-TYPE       0.00      0.00      0.00         1
+                                                KRAS WILD-TYPE TUMORS       0.00      0.00      0.00         0
+                                         NON-GERMLINE BRCA1/2-MUTATED       0.00      0.00      0.00         1
+                                                                 NONE       1.00      0.40      0.57         5
+PD-L1 COMBINED POSITIVE SCORE (CPS) AND TUMOR MUTATIONAL BURDEN (TMB)       0.00      0.00      0.00         0
+                                    PD-L1 EXPRESSION,TP53 CO-MUTATION       0.00      0.00      0.00         0
+                               PD-L1+;TP53 CO-MUTATION;EGFR MUTATIONS       0.00      0.00      0.00         1
+                                                                 PSMA       0.00      0.00      0.00         0
+                                     RAS MUTATIONS BEYOND KRAS EXON 2       1.00      1.00      1.00         1
+                                                     RAS/BRAF MUTATED       1.00      1.00      1.00         1
+
+                                                             accuracy                           0.40        15
+                                                            macro avg       0.25      0.22      0.23        15
+                                                         weighted avg       0.60      0.40      0.46        15
