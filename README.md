@@ -6,6 +6,7 @@ This is a Python project for ChatGPT 3.5 API demos in different scenarios, inclu
 🎉 PDF One Round demo  
 🎉 Test Case Automation demo  
 🎉 Reference demo  
+🎉 Clinical Trial Results demo  
 🎉 Token Calculator demo  
 
 
@@ -38,6 +39,10 @@ for example, we have the ADC drug search analyzing as below:
 ![](./public/synapse_drug_analyzing.png)
 feed the data into API and get the final summarization with references 
 ![](./public/reference_demo.png)
+
+## Clinical Trial Results demo
+Use GPT-3.5 API to extract the clinical trial results related fields from the paper, also doing the lines of therapy and overall evaluation classification for the content at the same time
+![](./public/ct_results_demo.png)
 
 ## Token Calculator demo
 Simply make a demo to present how to use tiktoken library
