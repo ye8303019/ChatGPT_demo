@@ -3,3 +3,14 @@ def phase_convert(string):
     return result.strip()
 
 
+def check_words_in_string(string, words, case_ignore=False):
+    for word in words:
+        if case_ignore:
+            if word.lower() in string.lower():
+                return True
+        else:
+            if word in string:
+                return True
+    return False
+
+

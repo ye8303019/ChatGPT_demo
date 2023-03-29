@@ -108,7 +108,8 @@ def xls2markdown(xls_file):
                                                f"if there are multiple previous columns, use '-' to separate them  \n"
                                                f"4. Answer in Chinese also \n"
                                                f"5. Each line of the markdown table must be one test case. \n"
-                                               f"6. Each 'test Step' must have an expected result to be mapping to \n"
+                                               f"6. Each 'Test Steps' item must have an 'Expected Result' item to be "
+                                               f"mapping to \n "
                                                f"7. 'Priority' only could be '高', '中', '低' \n"
                                                f"8. If the cause is 'search', 'analysis', 'table list', 'data', "
                                                f"'security' "
@@ -150,7 +151,7 @@ def xls2markdown(xls_file):
                                                f"高\n\n"
                     }]
 
-        response = ou.chat_completion(message, model, max_token, 0.2, 60)
+        response = ou.chat_completion(message, model, max_token, 0.8, 60)
         print(response)
 
 

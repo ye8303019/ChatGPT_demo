@@ -1,43 +1,13 @@
-1274P - First-line (1L) nivolumab (NIVO) plus ipilimumab (IPI) in Asian patients (pts) with advanced non-small cell lung cancer (aNSCLC) in CheckMate 227
+Neoadjuvant letrozole plus taselisib versus letrozole plus placebo in postmenopausal women with oestrogen receptor-positive, HER2-negative, early-stage breast cancer (LORELEI): a multicentre, randomised, double-blind, placebo-controlled, phase 2 trial
+Abstract
+Background: Endocrine therapy-based neoadjuvant treatment for luminal breast cancer allows efficient testing of new combinations before surgery. The activation of the phosphatidylinositol-3-kinase (PI3K) pathway is a known mechanism of resistance to endocrine therapy. Taselisib is an oral, selective PI3K inhibitor with enhanced activity against PIK3CA-mutant cancer cells. The LORELEI trial tested whether taselisib in combination with letrozole would result in an increased proportion of objective responses and pathological complete responses.
 
-Background
-In CheckMate 227 Part 1 (NCT02477826), 1L treatment with NIVO + IPI improved overall survival (OS) vs platinum-doublet chemotherapy (chemo) in pts with aNSCLC. Safety was manageable and consistent with the known profile of NIVO + IPI in NSCLC. We report results in the Asian subpopulation of CheckMate 227.
+Methods: In this multicentre, randomised, double-blind, parallel-cohort, placebo-controlled phase 2, study, we enrolled postmenopausal women (aged ≥18 years) with histologically confirmed, oestrogen receptor (ER)-positive, HER2-negative, stage I-III, operable breast cancer, from 85 hospitals in 22 countries worldwide. To be eligible, patients had have an Eastern Cooperative Oncology Group (ECOG) performance status 0-1, adequate organ function, and had to have evaluable tumour tissue for PIK3CA genotyping. Patients were randomly assigned (1:1) by means of a permuted block algorithm (block size of four) via an interactive voice or web-based response system, to receive letrozole (2·5 mg/day orally, continuously) with either 4 mg of oral taselisib or placebo (on a 5 days-on, 2 days-off schedule) for 16 weeks, followed by surgery. Randomisation was stratified by tumour size and nodal status. Site staff, patients, and the sponsor were masked to treatment assignment. Coprimary endpoints were the proportion of patients who achieved an objective response by centrally assessed breast MRI and a locally assessed pathological complete response in the breast and axilla (ypT0/Tis, ypN0) at surgery in all randomly assigned patients and in patients with PIK3CA-mutant tumours. Analyses were done in the intention-to-treat population. This trial is registered with ClinicalTrials.gov, number NCT02273973, and is closed to accrual.
 
-Methods
-Pts with stage IV/recurrent NSCLC, ECOG performance status 0–1, no sensitizing EGFR mutations or known ALK alterations, and no prior systemic therapies were eligible. Pts with PD-L1 ≥ 1% were randomized 1:1:1 to NIVO (3 mg/kg Q2W) + IPI (1 mg/kg Q6W), NIVO alone (240 mg Q2W), or chemo. Pts with PD-L1 < 1% were randomized 1:1:1 to NIVO + IPI, NIVO (360 mg Q3W) + chemo, or chemo. The Asian subpopulation includes pts from Japan, South Korea, and Taiwan.
+Findings: Between Nov 12, 2014, and Aug 12, 2016, 334 participants were enrolled and randomly assigned to receive letrozole and placebo (n=168) or letrozole and taselisib (n=166). Median follow-up was 4·9 months (IQR 4·7-5·1). The study met one of its primary endpoints: the addition of taselisib to letrozole was associated with a higher proportion of patients achieving an objective response in all randomly assigned patients (66 [39%] of 168 patients in the placebo group vs 83 [50%] of 166 in the taselisib group; odds ratio [OR] 1·55, 95% CI 1·00-2·38; p=0·049) and in the PIK3CA-mutant subset (30 [38%] of 79 vs 41 [56%] of 73; OR 2·03, 95% CI 1·06-3·88; p=0·033). No significant differences were observed in pathological complete response between the two groups, either in the overall population (three [2%] of 166 in the taselisib group vs one [1%] of 168 in the placebo group; OR 3·07 [95% CI 0·32-29·85], p=0·37) or in the PIK3CA-mutant cohort (one patient [1%) vs none [0%]; OR not estimable, p=0·48). The most common grade 3-4 adverse events in the taselisib group were gastrointestinal (13 [8%] of 167 patients), infections (eight [5%]), and skin-subcutaneous tissue disorders (eight [5%]). In the placebo group, four (2%) of 167 patients had grade 3 or worse vascular disorders, two (1%) had gastrointestinal disorders, and two (1%) patients had grade 3 or worse infections and infestations. There was no grade 4 hyperglycaemia and grade 3 cases were asymptomatic. Serious adverse events were more common in the taselisib group (eight [5%] patients with infections and seven [4%] with gastrointestinal effects) than in the placebo group (one [1%] patient each with grade 3 postoperative wound and haematoma infection, grade 4 hypertensive encephalopathy, grade 3 acute cardiac failure, and grade 3 breast pain). One death occurred in the taselisib group, which was not considered to be treatment-related.
 
-Results
-A total of 121 Asian pts were randomized to NIVO + IPI and 124 to chemo; baseline characteristics were generally balanced between arms. Minimum follow-up for OS was 29.7 mo (database lock, July 2, 2019). Asian pts with PD-L1 ≥ 1% had a 24% reduction in risk of death with NIVO + IPI vs chemo; hazard ratio (HR) for OS was 0.76 (95% CI, 0.49–1.17; Table). Median progression-free survival (PFS) was 11.0 mo with NIVO + IPI vs 6.7 mo with chemo (HR, 0.64 [95% CI, 0.43–0.95]). Objective response rates were 54% with NIVO + IPI and 37% with chemo; median duration of response was 26.1 mo and 6.9 mo, respectively. Among all randomized Asian pts (PD-L1 ≥ 1% + < 1%), improved efficacy with NIVO + IPI vs chemo was also observed (Table). Grade 3–4 treatment-related adverse events (TRAEs) were reported in 40% of pts with NIVO + IPI vs 36% with chemo. Any-grade TRAEs leading to discontinuation occurred in 22% vs 13% of pts, respectively. Updated results with a 3-y minimum follow-up will be presented.
+Interpretation: The increase in the proportion of patients who achieved an objective response from the addition of taselisib to endocrine therapy in a neoadjuvant setting is consistent with the clinical benefit observed in hormone receptor-positive, HER2-negative, metastatic breast cancer.
 
-Conclusions
-As with the global population of CheckMate 227, the Asian subpopulation had improved efficacy with NIVO + IPI vs chemo as 1L treatment for aNSCLC. Safety in the Asian subpopulation was consistent with the global population. Table: 1274P
+Funding: Genentech and F Hoffmann-La Roche.
 
-Efficacy in the Asian subpopulation of CheckMate 227
-
-Pts with PD-L1 ≥ 1%	NIVO + IPI (n = 81)	Chemo (n = 81)
-OS, median (95% CI), mo HR (95% CI)	NR (16.6–NR) 0.76 (0.49–1.17)	24.8 (19.5–32.5) –
-1-y OS, %	79	77
-2-y OS, %	56	51
-PFS, median (95% CI), mo HR (95% CI)	11.0 (5.5–19.6) 0.64 (0.43–0.95)	6.7 (4.4–7.4) –
-ORR, n (%)	44 (54)	30 (37)
-DOR, median (95% CI), mo	26.1 (15.0–NR)	6.9 (3.9–11.1)
-All randomized pts	NIVO + IPI (n = 121)	Chemo (n = 124)
-OS, median (95% CI), mo HR (95% CI)	NR (17.8–NR) 0.68 (0.49–0.96)	22.9 (18.2–26.4) –
-1-y OS, %	76	68
-2-y OS, %	53	45
-PFS, median (95% CI), mo HR (95% CI)	8.5 (5.5–11.1) 0.66 (0.48–0.90)	5.6 (4.5–7.0) –
-ORR, n (%)	57 (47)	41 (33)
-DOR, median (95% CI), mo	24.5 (15.0–NR)	5.6 (3.7–6.9)
-NR, not reached.
-
-Clinical trial identification
-NCT02477826; June 23, 2015.
-
-Editorial acknowledgement
-Writing and editorial assistance was provided by Laura Yee, PhD, of Caudex, funded by Bristol-Myers Squibb Company.
-
-Legal entity responsible for the study
-Bristol-Myers Squibb Company.
-
-Funding
-Bristol-Myers Squibb Company.
+Copyright © 2019 Elsevier Ltd. All rights reserved.
