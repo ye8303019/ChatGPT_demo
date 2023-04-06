@@ -15,7 +15,7 @@ max_token = 500
 # test.pdf, mv-v19-1074.pdf
 file_name = 'mv-v19-1074.pdf'
 
-model = main.OPENAI_MODEL
+model = main.OPENAI_CHAT_MODEL
 
 # Load the tokenizer which is designed to work with the ada-002 model
 tokenizer = tiktoken.encoding_for_model(model)

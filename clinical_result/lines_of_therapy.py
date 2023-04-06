@@ -1,11 +1,10 @@
 import utils.chunk_utils as cu
 import utils.openai_utils as ou
 import utils.json_utils as ju
-import utils.string_utils as su
 import main
 
 token_threshold = 1300
-model = main.OPENAI_MODEL
+model = main.OPENAI_CHAT_MODEL
 key_words = ['line', 'lines', 'prior', 'untreated']
 
 
@@ -28,7 +27,7 @@ def format_answer(answers):
 
 # if only CTGov clinical trials could be listed in the abstract
 def gpt_extraction(abstract):
-    abstract = abstract.replace("\"", " ").replace("'", " ")
+    abstract = abstract.replace("\"", " ").replace("'", " ").replace("[", " ").replace("]", " ")
     message = [{"role": "system", "content": "Now you are a excellent NLP Classification model"},
                {"role": "user", "content": f"Knowledge:\n"
                                            f"1. First Line Therapy(Frontline Therapy)\n"
@@ -114,13 +113,13 @@ def gpt_extraction(abstract):
                                            f"Json:\n"
                                            f"[{{'Line of Therapy':'None'}}]\n"
                                            f"Reason:\n"
-                                           f"Because although the content mentioned 'previously treated chronic lymphocytic leukemia/small lymphocytic lymphoma (CLL/SLL)', there is no additional content or keyword to mention which line of therapy has been given before, so it's not 100% sure, so the answer is 'None'.\n"
+                                           f"Because although the content mentioned 'previously treated chronic lymphocytic leukemia/small lymphocytic lymphoma (CLL/SLL)' but there is no more information about 'previously' line belong to which line of therapy, so the answer is 'None'.\n"
                                            f"\n"
                                            f"Based on the knowledge and rules provided above, please get answer for the input below:\n"
                                            f"Input:\n"
                                            f"{abstract}\n"
                                            f"\n"
-                                           f"Based on the knowledge and rules above, REMEMBER, IF THE CONTENT NOT EXLICITLY CONTAIN 'untreated','prior', 'line', 'lines', 'Salvage', 'Maintenance', 'Adjuvant', 'Neoadjuvant', 'Palliative', then you are not 100% sure, so what's the line of therapy that you have 100% confidence about for the input? If you don't know or not sure, return 'None' in the field 'Line of Therapy' in json\n"
+                                           f"Based on the knowledge and rules above, REMEMBER, IF THE CONTENT NOT EXLICITLY CONTAIN 'untreated','prior', 'line', 'lines', 'Salvage', 'Maintenance', 'Adjuvant', 'Neoadjuvant', 'Palliative', then you are not 100% sure, so tell me the line of therapy for the therapeutic regimen studied for the input? If you don't know or not sure, return 'None' in the field 'Line of Therapy' in json\n"
                                            f"A:"}]
     response = ou.chat_completion(message, temperature=0.2, timeout=25)
     print(response)

@@ -1,5 +1,6 @@
 import openai
 import utils.openai_utils as ou
+import utils.file_utils as fu
 import re
 
 import main
@@ -11,17 +12,10 @@ openai.api_key = openai_key.api_key
 # Author : Ye Zhongkai
 
 # reference_content_1
-model = main.OPENAI_MODEL
-table_summary_limit = 1500
+model = main.OPENAI_CHAT_MODEL
+table_summary_limit = 2000
 table_summary_token_limit = 300
 final_summary_token_limit = 2000
-
-
-def get_content(file_name):
-    with open(file_name, 'r', encoding='utf-8') as file:
-        # Read the file content and store it in a variable
-        file_content = file.read()
-    return file_content
 
 
 def get_tables(file_content):
@@ -63,7 +57,7 @@ def split_content(file_content, token_threshold):
     return file_contents
 
 
-def get_shot_summary(content):
+def get_query(content):
     if "Current date" in content:
         return content
     else:
@@ -78,6 +72,31 @@ def get_shot_summary(content):
         response = ou.chat_completion(message, model, table_summary_token_limit)
         print("===============================================================")
         print("Summary: " + response)
+    return response
+
+
+def get_query(tables):
+    query_table_content = ""
+    for table in tables:
+        if "Current date" in table:
+            query_table_content = table
+    return query_table_content
+
+
+def get_shot_summary(content):
+    message = [{"role": "system", "content": "You are a great Pharmaceutical Project Analyzer"},
+               {"role": "user", "content": f"Context: \n"
+                                           f"{content} \n "
+                                           f"Instructions:Please explain the content above, the table in the content "
+                                           f"is the query result, should combine the query and table together, "
+                                           f"and also need to put the real number into your explanation to give a "
+                                           f"more accurate "
+                                           f"analysis. write in English and The output must be "
+                                           f"less than {table_summary_limit} characters long"
+                }]
+    response = ou.chat_completion(message, model, table_summary_token_limit, timeout=50)
+    print("===============================================================")
+    print("Summary: " + response)
     return response
 
 
@@ -107,20 +126,24 @@ def read_with_reference(content):
     #                                        f"insights, and do not tell others what's the role of you.Please write "
     #                                        f"in English."
     #             }]
-    response = ou.chat_completion(message, model, final_summary_token_limit, 0.5, 20)
+    response = ou.chat_completion(message, model, final_summary_token_limit, 0.5, 60)
     return response
 
 
-summaries = [get_shot_summary(x) for x in get_tables(get_content("reference_content_1"))]
+def get_final_result():
+    analysis_tables = get_tables(fu.get_content("reference_content_1"))
+    query_content = get_query(analysis_tables)
+    summaries = [get_shot_summary(query_content + "\n" + x) for x in analysis_tables[0:len(analysis_tables) - 1]]
 
-final_content = ""
-for i, summary in enumerate(summaries):
-    if "Current date" in summary:
-        final_content += (summary + "\n\n")
-    else:
-        final_content += ("[" + str(i+1) + "]   " + summary + "\n\n")
+    final_content = (query_content + "\n\n")
+    for i, summary in enumerate(summaries):
+        final_content += ("[" + str(i + 1) + "]   " + summary + "\n\n")
 
-print("===============================================================")
-print(final_content)
-print("========================   Result  ============================")
-print(read_with_reference(final_content))
+    print("===============================================================")
+    print(final_content)
+    print("========================   Result  ============================")
+    print(read_with_reference(final_content))
+
+
+if __name__ == '__main__':
+    get_final_result()

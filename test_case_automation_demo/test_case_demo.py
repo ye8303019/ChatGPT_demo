@@ -13,7 +13,7 @@ openai.api_key = openai_key.api_key
 
 max_token = 1500
 case_step = 5
-model = main.OPENAI_MODEL
+model = main.OPENAI_CHAT_MODEL
 
 # Drug Search Upgrade.xmind, Synapse PLG 2.0.xmind,专利1.2.xmind,多靶点遗留.xmind,Dashboard 优化.xmind
 file_name = 'Synapse PLG 2.0.xmind'

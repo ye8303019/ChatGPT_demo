@@ -15,7 +15,7 @@ file_name = 'Rethinking-Marketing(1).pdf'
 pdf_chunk_token_limit = 3200
 map_character_limit = 650
 reduce_character_limit = 3300
-model = main.OPENAI_MODEL
+model = main.OPENAI_CHAT_MODEL
 
 
 # Remove new lines from the text

@@ -4,7 +4,7 @@ import utils.json_utils as ju
 import main
 
 token_threshold = 3500
-model = main.OPENAI_MODEL
+model = main.OPENAI_CHAT_MODEL
 
 def format_answer(answers):
     dicts = []

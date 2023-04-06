@@ -1,0 +1,264 @@
+[Table 1]
+[1]
+This table is the distribution of drug highest phases,  If there are many projects in later phase or approved, it implies fierce competitions in future and it is not appropriate to push forward similar project. The table result is based on the query.
+| Phase | Drug Count |
+|:-----|:----------------|
+|Inactive | 270 |
+|Discovery | 132 |
+|Preclinical | 387 |
+|IND | 10 |
+|Clinical | 13 |
+|Early Phase 1 | 2 |
+|Phase 1 | 128 |
+|Phase 1/2 | 34 |
+|Phase 2 | 32 |
+|Phase2/3 | 2 |
+|Phase 3 | 14 |
+|NDA/BLA | 14 |
+|Approved | 16 |
+
+[Table 2]
+[2] This table is the top 10 organizations(companies) and its drug distribution in R&D status. The clearer the mechanism of targets or indications, the more famous pharmaceutical companies are involved, the greater the drug number and the later the drug phase. The table result is based on the query.
+| Organization | Phase | Drug Count |
+|:-----------|:-------|:----------------|
+| Seagen Inc. | Inactive | 22 |
+| Seagen Inc. | Discovery | 1 |
+| Seagen Inc. | Preclinical | 1 |
+| Seagen Inc. | Phase 1 | 7 |
+| Seagen Inc. | Phase 2 | 3 |
+| Seagen Inc. | Approved | 2 |
+| Roche Holding AG | Inactive | 19 |
+| Roche Holding AG | Discovery | 1 |
+| Roche Holding AG | Preclinical | 5 |
+| Roche Holding AG | Phase 1 | 3 |
+| Roche Holding AG | Phase 2 | 2 |
+| Roche Holding AG | Approved | 2 |
+| ImmunoGen, Inc. | Inactive | 14 |
+| ImmunoGen, Inc. | Discovery | 1 |
+| ImmunoGen, Inc. | Preclinical | 10 |
+| ImmunoGen, Inc. | Phase 1 | 1 |
+| ImmunoGen, Inc. | Phase 2 | 5 |
+| ImmunoGen, Inc. | Approved | 1 |
+| LegoChem Biosciences Inc. | Inactive | 3 |
+| LegoChem Biosciences Inc. | Discovery | 11 |
+| LegoChem Biosciences Inc. | Preclinical | 9 |
+| LegoChem Biosciences Inc. | IND | 1 |
+| LegoChem Biosciences Inc. | Phase 1 | 3 |
+| Nonindustrial Source | Inactive | 24 |
+| Pfizer Inc. | Inactive | 7 |
+| Pfizer Inc. | Discovery | 2 |
+| Pfizer Inc. | Preclinical | 9 |
+| Pfizer Inc. | Phase 1 | 3 |
+| Pfizer Inc. | Approved | 2 |
+| 禧博创生物医药（嘉兴）合伙企业（有限合伙） | Discovery | 1 |
+| 禧博创生物医药（嘉兴）合伙企业（有限合伙） | Preclinical | 15 |
+| 禧博创生物医药（嘉兴）合伙企业（有限合伙） | Phase 1 | 5 |
+| 禧博创生物医药（嘉兴）合伙企业（有限合伙） | Phase 2 | 1 |
+| AbbVie Inc. | Inactive | 4 |
+| AbbVie Inc. | Discovery | 1 |
+| AbbVie Inc. | Preclinical | 1 |
+| AbbVie Inc. | Phase 1 | 10 |
+| AbbVie Inc. | Phase 2 | 3 |
+| AbbVie Inc. | Phase 3 | 2 |
+| Bristol Myers Squibb Co. | Inactive | 12 |
+| Bristol Myers Squibb Co. | Preclinical | 2 |
+| Bristol Myers Squibb Co. | Phase 1 | 1 |
+| Bristol Myers Squibb Co. | Phase 1/2 | 1 |
+| Bristol Myers Squibb Co. | Phase 2 | 3 |
+| AstraZeneca PLC | Inactive | 19 |
+| AstraZeneca PLC | Preclinical | 1 |
+| AstraZeneca PLC | Phase 1 | 3 |
+| AstraZeneca PLC | Phase 1/2 | 2 |
+| AstraZeneca PLC | Phase 2 | 2 |
+| AstraZeneca PLC | Phase 3 | 5 |
+| AstraZeneca PLC | Approved | 2 |
+
+[Table 3]
+[3] This table is type of all organizations. Drugs in early phase may be developed by research institutions, which is more cheaper but riskier compare with license in. The table result is based on the query.
+| Organization Type | Organization Count | Percent   |
+| ----------------- | ------------------ | --------- |
+| Company           | 930                | 95%       |
+| Education         | 30                 | 3.06%     |
+| Nonprofit         | 17                 | 1.74%     |
+| Government        | 2                  | 0.2%      |
+
+[Table 4]
+[4] This table is top 5 countries/locations of organization headquarters. It implies popularity of targets or indications in these countries/locations. The table result is based on the query.
+| Country/Location | Drug Count |
+| ---------------- | ---------- |
+| United States    | 486        |
+| China            | 304        |
+| Germany          | 61         |
+| United Kindom    | 44         |
+| South Korea      | 43         |
+
+[Table 5]
+[5] This table is top 10 targets and its drug distribution in R&D status. The clearer the mechanism of targets, the greater the drug number and the later the drug phase. The table result is based on the query.
+| Target    | Phase           | Drug Count |
+| --------- | -------------- | ---------- |
+| Tubulin   | Inactive        | 36         |
+| Tubulin   | Discovery       | 5          |
+| Tubulin   | Preclinical     | 37         |
+| Tubulin   | IND             | 1          |
+| Tubulin   | Clinical        | 4          |
+| Tubulin   | Phase 1         | 24         |
+| Tubulin   | Phase 1/2       | 5          |
+| Tubulin   | Phase 2         | 18         |
+| Tubulin   | Phase 2/3       | 1          |
+| Tubulin   | Phase 3         | 6          |
+| Tubulin   | Approved        | 8          |
+| HER2      | Inactive        | 8          |
+| HER2      | Discovery       | 5          |
+| HER2      | Preclinical     | 37         |
+| HER2      | IND             | 1          |
+| HER2      | Clinical        | 6          |
+| HER2      | Phase 1         | 17         |
+| HER2      | Phase 1/2       | 6          |
+| HER2      | Phase 2         | 4          |
+| HER2      | Phase 3         | 5          |
+| HER2      | Phase NDL/BLA   | 1          |
+| HER2      | Approved        | 4          |
+| TOP1      | Inactive        | 5          |
+| TOP1      | Preclinical     | 8          |
+| TOP1      | Clinical        | 1          |
+| TOP1      | Phase 1         | 7          |
+| TOP1      | Phase 1/2       | 3          |
+| TOP1      | Phase 2         | 2          |
+| TOP1      | Phase 3         | 4          |
+| TOP1      | Approved        | 2          |
+| EGFR      | Inactive        | 5          |
+| EGFR      | Discovery       | 4          |
+| EGFR      | Preclinical     | 8          |
+| EGFR      | Phase 1         | 6          |
+| EGFR      | Phase 1/2       | 1          |
+| EGFR      | Phase 2         | 1          |
+| EGFR      | Phase 3         | 2          |
+| EGFR      | Approved        | 1          |
+| Trop-2    | Inactive        | 3          |
+| Trop-2    | Discovery       | 12         |
+| Trop-2    | Phase 1         | 5          |
+| Trop-2    | Phase 1/2       | 4          |
+| Trop-2    | Phase 3         | 2          |
+| Trop-2    | Approved        | 1          |
+| DNA       | Inactive        | 9          |
+| DNA       | Preclinical     | 3          |
+| DNA       | Phase 1         | 3          |
+| DNA       | Phase 2         | 1          |
+| DNA       | Phase 2/3       | 1          |
+| DNA       | Phase NDL/BLA   | 1          |
+| DNA       | Approved        | 3          |
+| CD19      | Inactive        | 6          |
+| CD19      | Discovery       | 4          |
+| CD19      | Preclinical     | 4          |
+| CD19      | IND             | 1          |
+| CD19      | Phase 1         | 2          |
+| CD19      | Phase 2         | 1          |
+| CD19      | Approved        | 1          |
+| CLDN18.2  | Inactive        | 2          |
+| CLDN18.2  | Preclinical     | 3          |
+| CLDN18.2  | Phase 1         | 7          |
+| CLDN18.2  | Phase 1/2       | 4          |
+| nectin-4  | Inactive        | 1          |
+| nectin-4  | Discovery       | 1          |
+| nectin-4  | Preclinical     | 5          |
+| nectin-4  | Phase 1         | 3          |
+| nectin-4  | Phase 1/2       | 1          |
+| nectin-4  | Approved        | 1          |
+| ROR1      | Inactive        | 1          |
+| ROR1      | Discovery       | 1          |
+| ROR1      | Preclinical     | 6          |
+| ROR1      | Phase 1         | 1          |
+| ROR1      | Phase 2         | 1          |
+| ROR1      | Phase 2/3       | 1          |
+| ROR1      | Phase 3         | 1          |
+
+
+[Table 6]
+[6] This table is top 10 indications and its drug distribution in R&D status. The clearer the mechanism of indications, the greater the drug number and the later the drug phase. The table result is based on the query.
+| Indications                  | Phase         | Drug Count |
+| ----------------------------| -------------| ---------- |
+| Neoplasms                    | Inactive     | 115        |
+| Neoplasms                    | Discovery    | 45         |
+| Neoplasms                    | Preclinical  | 145        |
+| Neoplasms                    | IND          | 5          |
+| Neoplasms                    | Clinical     | 6          |
+| Neoplasms                    | Early Phase 1| 2          |
+| Neoplasms                    | Phase 1      | 20         |
+| Neoplasms                    | Phase 1/2    | 2          |
+| Neoplasms                    | Phase 2      | 5          |
+| Neoplasms                    | NDA/BLA      | 1          |
+| Solid Tumors                | Inactive     | 42         |
+| Solid Tumors                | Discovery    | 32         |
+| Solid Tumors                | Preclinical  | 109        |
+| Solid Tumors                | IND          | 8          |
+| Solid Tumors                | Phase 1      | 73         |
+| Solid Tumors                | Phase 1/2    | 24         |
+| Solid Tumors                | Phase 2      | 19         |
+| Solid Tumors                | Phase 3      | 1          |
+| Breast Cancer               | Inactive     | 17         |
+| Breast Cancer               | Discovery    | 8          |
+| Breast Cancer               | Preclinical  | 36         |
+| Breast Cancer               | Phase 1      | 16         |
+| Breast Cancer               | Phase 1/2    | 1          |
+| Breast Cancer               | Phase 2      | 13         |
+| Breast Cancer               | Phase 3      | 5          |
+| Breast Cancer               | Approved     | 3          |
+| Non-Small Cell Lung Cancer  | Inactive     | 12         |
+| Non-Small Cell Lung Cancer  | Discovery    | 12         |
+| Non-Small Cell Lung Cancer  | Phase 1      | 10         |
+| Non-Small Cell Lung Cancer  | Phase 1/2    | 5          |
+| Non-Small Cell Lung Cancer  | Phase 2      | 14         |
+| Non-Small Cell Lung Cancer  | Phase2/3     | 1          |
+| Non-Small Cell Lung Cancer  | Phase 3      | 7          |
+| Stomach Cancer              | Inactive     | 13         |
+| Stomach Cancer              | Discovery    | 4          |
+| Stomach Cancer              | Preclinical  | 14         |
+| Stomach Cancer              | IND          | 2          |
+| Stomach Cancer              | Phase 1      | 14         |
+| Stomach Cancer              | Phase 1/2    | 3          |
+| Stomach Cancer              | Phase 2      | 8          |
+| Stomach Cancer              | Phase 3      | 1          |
+| Stomach Cancer              | Approved     | 1          |
+| Ovarian Cancer              | Inactive     | 270        |
+| Ovarian Cancer              | Discovery    | 132        |
+| Ovarian Cancer              | Preclinical  | 387        |
+| Ovarian Cancer              | IND          | 10         |
+| Ovarian Cancer              | Clinical     | 13         |
+| Ovarian Cancer             | Early Phase 1 | 2  |
+| Ovarian Cancer             | Phase 1       | 128|
+| Ovarian Cancer             | Phase 1/2     | 34 |
+| Ovarian Cancer             | Phase 2       | 32 |
+| Ovarian Cancer             | Phase 2/3     | 2  |
+| Ovarian Cancer             | Phase 3       | 14 |
+| Ovarian Cancer             | NDA/BLA       | 14 |
+| Ovarian Cancer             | Approved      | 16 |
+| Pancreatic Cancer          | Inactive      | 11 |
+| Pancreatic Cancer          | Discovery     | 3  |
+| Pancreatic Cancer          | Preclinical   | 12 |
+| Pancreatic Cancer          | IND           | 1  |
+| Pancreatic Cancer          | Phase 1       | 8  |
+| Pancreatic Cancer          | Phase 1/2     | 2  |
+| Pancreatic Cancer          | Phase 2       | 7  |
+| Colorectal Cancer          | Inactive      | 4  |
+| Colorectal Cancer          | Discovery     | 4  |
+| Colorectal Cancer          | Preclinical   | 9  |
+| Colorectal Cancer          | Phase 1       | 10 |
+| Colorectal Cancer          | Phase 1/2     | 1  |
+| Colorectal Cancer          | Phase 2       | 8  |
+| Multiple Myeloma           | Inactive      | 11 |
+| Multiple Myeloma           | Discovery     | 2  |
+| Multiple Myeloma           | Preclinical   | 10 |
+| Multiple Myeloma           | Phase 1       | 9  |
+| Multiple Myeloma           | Phase 1/2     | 2  |
+| Multiple Myeloma           | Approved      | 1  |
+| Triple Negative Breast Cancer | Inactive    | 6  |
+| Triple Negative Breast Cancer | Preclinical | 10 |
+| Triple Negative Breast Cancer | Phase 1     | 7  |
+| Triple Negative Breast Cancer | Phase 1/2   | 2  |
+| Triple Negative Breast Cancer | Phase 2     | 6  |
+| Triple Negative Breast Cancer | Phase 3     | 2  |
+| Triple Negative Breast Cancer | Approved    | 1  |
+
+[Table 7]
+Current date: 2023/3/9
+Query: ADC

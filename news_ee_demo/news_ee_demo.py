@@ -8,7 +8,7 @@ import utils.openai_utils as ou
 
 # Author : Ye Zhongkai
 max_token = 1000
-model = main.OPENAI_MODEL
+model = main.OPENAI_CHAT_MODEL
 
 
 # Remove new lines from the text

@@ -4,7 +4,7 @@ import utils.openai_utils as ou
 import utils.json_utils as ju
 
 token_threshold = 1800
-model = main.OPENAI_MODEL
+model = main.OPENAI_CHAT_MODEL
 
 
 def format_answer(answers):

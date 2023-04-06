@@ -26,3 +26,10 @@ def write_file(file_name, file_path, content):
 
     with open(file_path+file_name, 'w', encoding='utf-8') as f:
         f.write(content)
+
+
+def get_content(file_name):
+    with open(file_name, 'r', encoding='utf-8') as file:
+        # Read the file content and store it in a variable
+        file_content = file.read()
+    return file_content
